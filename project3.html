@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let english = Number(prompt("Enter English Marks"));
+let math = Number(prompt("Enter Math Marks"));
+let computer = Number(prompt("Enter Computer Marks"));
+
+let total = 300;
+let obtained = english + math + computer;
+
+let percentage = (obtained / total) * 100;
+
+let grade;
+
+if(percentage >= 80)
+grade = "A+";
+else if(percentage >= 70)
+grade = "A";
+else if(percentage >= 60)
+grade = "B";
+else if(percentage >= 50)
+grade = "C";
+else
+grade = "Fail";
+
+document.write("Total Marks = " + total + "<br>");
+document.write("Obtained = " + obtained + "<br>");
+document.write("Percentage = " + percentage.toFixed(2) + "%<br>");
+document.write("Grade = " + grade);
+    </script>
+</body>
+</html>
